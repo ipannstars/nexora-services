@@ -1,14 +1,14 @@
+import "./globals.css";
+
 export const metadata = {
-  title: 'Nexora Services',
-  description: 'Dashboard UI'
-}
+  title: "Nexora Services",
+  description: "Premium Digital Services UI",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0 }}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  )
+  );
 }
