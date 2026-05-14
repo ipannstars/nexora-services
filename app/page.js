@@ -1,425 +1,493 @@
 export default function Home() {
   return (
-    <main style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(180deg,#04010a,#090014,#04010a)',
-      color: 'white',
-      fontFamily: 'Arial',
-      padding: '18px'
-    }}>
+    <main
+      style={{
+        minHeight: "100vh",
+        background:
+          "radial-gradient(circle at top, #1a0033 0%, #05010b 45%, #020204 100%)",
+        color: "white",
+        fontFamily: "Arial",
+        padding: "18px",
+        maxWidth: "430px",
+        margin: "0 auto",
+      }}
+    >
+      {/* HEADER */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <img
+            src="https://files.catbox.moe/7l8m6p.png"
+            style={{
+              width: "58px",
+              height: "58px",
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 0 20px #8b2cff",
+            }}
+          />
 
-      <div style={{ maxWidth: '430px', margin: '0 auto' }}>
-
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '22px'
-        }}>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{
-              width: '54px',
-              height: '54px',
-              borderRadius: '18px',
-              background: 'linear-gradient(180deg,#7c3aed,#a855f7)',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              fontWeight: 'bold',
-              fontSize: '28px',
-              boxShadow: '0 0 25px rgba(168,85,247,0.6)'
-            }}>
-              N
+          <div>
+            <div
+              style={{
+                fontSize: "42px",
+                fontWeight: "bold",
+                lineHeight: "38px",
+                color: "#c56fff",
+              }}
+            >
+              NEXORA
             </div>
 
-            <div>
-              <h1 style={{
-                margin: 0,
-                fontSize: '30px',
-                color: '#d8b4fe',
-                letterSpacing: '1px'
-              }}>
-                NEXORA
-              </h1>
-
-              <p style={{
-                margin: 0,
-                color: '#888',
-                letterSpacing: '3px'
-              }}>
-                SERVICES
-              </p>
+            <div
+              style={{
+                letterSpacing: "5px",
+                fontSize: "15px",
+                opacity: 0.7,
+              }}
+            >
+              SERVICES
             </div>
-          </div>
-
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <div style={topIcon}>🌙</div>
-            <div style={topIcon}>👤</div>
           </div>
         </div>
 
-        <div style={welcomeCard}>
-          <div style={{
-            width: '62px',
-            height: '62px',
-            borderRadius: '18px',
-            background: 'linear-gradient(180deg,#7c3aed,#9333ea)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            fontSize: '28px',
-            boxShadow: '0 0 20px rgba(168,85,247,0.5)'
-          }}>
+        <div style={{ display: "flex", gap: "14px" }}>
+          <div
+            style={{
+              width: "56px",
+              height: "56px",
+              borderRadius: "50%",
+              border: "1px solid #8f35ff",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "28px",
+              boxShadow: "0 0 15px #651fff",
+            }}
+          >
+            🌙
+          </div>
+
+          <div
+            style={{
+              width: "56px",
+              height: "56px",
+              borderRadius: "50%",
+              border: "1px solid #8f35ff",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "28px",
+              boxShadow: "0 0 15px #651fff",
+            }}
+          >
             👤
           </div>
+        </div>
+      </div>
+
+      {/* WELCOME */}
+      <div
+        style={{
+          background: "rgba(10,10,20,0.9)",
+          borderRadius: "24px",
+          padding: "18px",
+          display: "flex",
+          alignItems: "center",
+          gap: "16px",
+          marginBottom: "20px",
+          border: "1px solid rgba(170,70,255,0.25)",
+          boxShadow: "0 0 35px rgba(128,0,255,0.15)",
+        }}
+      >
+        <div
+          style={{
+            width: "78px",
+            height: "78px",
+            borderRadius: "22px",
+            background: "linear-gradient(180deg,#b155ff,#6e1cff)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "42px",
+            boxShadow: "0 0 25px #7b2dff",
+          }}
+        >
+          👤
+        </div>
+
+        <div>
+          <div style={{ opacity: 0.7, fontSize: "20px" }}>
+            Selamat datang kembali,
+          </div>
+
+          <div
+            style={{
+              fontSize: "28px",
+              color: "#b95fff",
+              fontWeight: "bold",
+              marginTop: "6px",
+            }}
+          >
+            Nexora User
+          </div>
+        </div>
+      </div>
+
+      {/* PROMOSI */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: "14px",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ fontSize: "24px", fontWeight: "bold" }}>
+          📢 Promosi
+        </div>
+
+        <div style={{ color: "#b95fff", fontSize: "20px" }}>
+          Lihat Semua ›
+        </div>
+      </div>
+
+      {/* BANNER */}
+      <div
+        style={{
+          background:
+            "linear-gradient(145deg,#090011,#180028,#090011,#2a0052)",
+          borderRadius: "28px",
+          padding: "24px",
+          marginBottom: "22px",
+          position: "relative",
+          overflow: "hidden",
+          border: "1px solid rgba(160,60,255,0.3)",
+          boxShadow: "0 0 35px rgba(120,0,255,0.2)",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: "-40px",
+            right: "-20px",
+            width: "200px",
+            height: "200px",
+            background: "rgba(170,70,255,0.18)",
+            filter: "blur(60px)",
+          }}
+        />
+
+        <div
+          style={{
+            fontSize: "22px",
+            fontWeight: "bold",
+            marginBottom: "10px",
+          }}
+        >
+          MENGAPA MEMILIH{" "}
+          <span style={{ color: "#b95fff" }}>NEXORA SERVICES?</span>
+        </div>
+
+        <div
+          style={{
+            opacity: 0.75,
+            marginBottom: "24px",
+            fontSize: "17px",
+          }}
+        >
+          Solusi Digital Terbaik Untuk Anda
+        </div>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gap: "14px",
+          }}
+        >
+          {[
+            ["🛡️", "Aman & Terpercaya"],
+            ["⚡", "Proses Cepat"],
+            ["🎧", "Support 24/7"],
+          ].map((item, i) => (
+            <div
+              key={i}
+              style={{
+                background: "rgba(0,0,0,0.35)",
+                borderRadius: "22px",
+                padding: "20px 14px",
+                textAlign: "center",
+                border: "1px solid rgba(170,70,255,0.2)",
+              }}
+            >
+              <div style={{ fontSize: "38px", marginBottom: "12px" }}>
+                {item[0]}
+              </div>
+
+              <div
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                  marginBottom: "10px",
+                }}
+              >
+                {item[1]}
+              </div>
+
+              <div style={{ opacity: 0.7, fontSize: "14px" }}>
+                Layanan terbaik dengan kualitas premium.
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "8px",
+            marginTop: "18px",
+          }}
+        >
+          <div
+            style={{
+              width: "36px",
+              height: "10px",
+              borderRadius: "999px",
+              background: "#b95fff",
+            }}
+          />
+
+          <div
+            style={{
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              background: "#555",
+            }}
+          />
+
+          <div
+            style={{
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              background: "#555",
+            }}
+          />
+
+          <div
+            style={{
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              background: "#555",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* SALDO */}
+      <div
+        style={{
+          background: "rgba(10,10,20,0.92)",
+          borderRadius: "26px",
+          padding: "20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "18px",
+          border: "1px solid rgba(160,60,255,0.2)",
+        }}
+      >
+        <div style={{ display: "flex", gap: "14px" }}>
+          <div
+            style={{
+              width: "72px",
+              height: "72px",
+              borderRadius: "20px",
+              background: "linear-gradient(180deg,#b155ff,#7422ff)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "38px",
+            }}
+          >
+            👛
+          </div>
 
           <div>
-            <p style={{ color: '#aaa', marginBottom: '6px' }}>
-              Selamat datang kembali,
-            </p>
-
-            <h2 style={{
-              margin: 0,
-              color: '#c084fc',
-              fontSize: '30px'
-            }}>
-              Nexora User
-            </h2>
-          </div>
-        </div>
-
-        <div style={sectionTitleWrap}>
-          <h3 style={sectionTitle}>📢 Promosi</h3>
-          <span style={seeAll}>Lihat Semua ›</span>
-        </div>
-
-        <div style={bannerCard}>
-          <div style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'radial-gradient(circle at top right,rgba(168,85,247,0.4),transparent 35%)'
-          }} />
-
-          <h1 style={{
-            fontSize: '22px',
-            marginBottom: '8px',
-            zIndex: 2
-          }}>
-            MENGAPA MEMILIH
-            <span style={{ color: '#a855f7' }}> NEXORA SERVICES?</span>
-          </h1>
-
-          <p style={{ color: '#ccc', zIndex: 2 }}>
-            Solusi Digital Terbaik Untuk Anda
-          </p>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr',
-            gap: '10px',
-            marginTop: '24px',
-            zIndex: 2,
-            width: '100%'
-          }}>
-
-            <div style={featureCard}>
-              <div style={featureIcon}>✔️</div>
-              <h4>Aman & Terpercaya</h4>
-              <p>Keamanan data anda adalah prioritas utama kami.</p>
+            <div style={{ opacity: 0.7, fontSize: "18px" }}>
+              Saldo Anda
             </div>
 
-            <div style={featureCard}>
-              <div style={featureIcon}>⚡</div>
-              <h4>Proses Cepat</h4>
-              <p>Layanan dikerjakan dengan cepat dan tepat waktu.</p>
-            </div>
-
-            <div style={featureCard}>
-              <div style={featureIcon}>🎧</div>
-              <h4>Support 24/7</h4>
-              <p>Tim kami siap membantu anda kapan saja.</p>
-            </div>
-          </div>
-
-          <div style={{
-            display: 'flex',
-            gap: '8px',
-            marginTop: '18px'
-          }}>
-            <div style={dotActive}></div>
-            <div style={dot}></div>
-            <div style={dot}></div>
-            <div style={dot}></div>
-          </div>
-        </div>
-
-        <div style={walletCard}>
-          <div style={walletIcon}>💳</div>
-
-          <div style={{ flex: 1 }}>
-            <p style={{ color: '#bbb', marginBottom: '6px' }}>Saldo Anda</p>
-
-            <h1 style={{
-              margin: 0,
-              color: '#a855f7',
-              fontSize: '42px'
-            }}>
+            <div
+              style={{
+                color: "#b95fff",
+                fontSize: "42px",
+                fontWeight: "bold",
+                marginTop: "6px",
+              }}
+            >
               Rp 6.734.556
-            </h1>
-
-            <p style={{ color: '#888' }}>
-              Saldo dapat digunakan untuk layanan di Nexora Services
-            </p>
-          </div>
-
-          <div style={{ color: '#a855f7', fontSize: '30px' }}>›</div>
-        </div>
-
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '14px',
-          marginTop: '16px'
-        }}>
-
-          <div style={statsCard}>
-            <div style={statsIcon}>🚀</div>
-            <div>
-              <h2 style={statsNumber}>3.765.417</h2>
-              <p style={statsText}>Order Selesai</p>
             </div>
-          </div>
 
-          <div style={statsCard}>
-            <div style={statsIcon}>⏳</div>
-            <div>
-              <h2 style={statsNumber}>1.915</h2>
-              <p style={statsText}>Order Diproses</p>
+            <div style={{ opacity: 0.6, marginTop: "6px" }}>
+              Saldo dapat digunakan untuk layanan
             </div>
           </div>
         </div>
 
-        <div style={sectionTitleWrap}>
-          <h3 style={sectionTitle}>📰 Berita Terbaru</h3>
-          <span style={seeAll}>Lihat Semua ›</span>
+        <div style={{ fontSize: "38px", color: "#b95fff" }}>›</div>
+      </div>
+
+      {/* STATS */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "16px",
+          marginBottom: "20px",
+        }}
+      >
+        {[
+          ["🚀", "3.765.417", "Order Selesai"],
+          ["⏳", "1.915", "Order Sedang Dikerjakan"],
+        ].map((item, i) => (
+          <div
+            key={i}
+            style={{
+              background: "rgba(10,10,20,0.92)",
+              borderRadius: "24px",
+              padding: "20px",
+              border: "1px solid rgba(160,60,255,0.2)",
+            }}
+          >
+            <div style={{ fontSize: "38px", marginBottom: "12px" }}>
+              {item[0]}
+            </div>
+
+            <div
+              style={{
+                color: "#b95fff",
+                fontSize: "34px",
+                fontWeight: "bold",
+              }}
+            >
+              {item[1]}
+            </div>
+
+            <div style={{ opacity: 0.65, marginTop: "6px" }}>{item[2]}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* BERITA */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: "14px",
+        }}
+      >
+        <div style={{ fontSize: "24px", fontWeight: "bold" }}>
+          📰 Berita Terbaru
         </div>
 
-        <div style={newsCard}>
-          <div style={newsImage}>N</div>
+        <div style={{ color: "#b95fff", fontSize: "20px" }}>
+          Lihat Semua ›
+        </div>
+      </div>
 
-          <div>
-            <h3 style={{ marginTop: 0 }}>
-              Nexora Services Hadir dengan Layanan Terbaik
-            </h3>
+      <div
+        style={{
+          background: "rgba(10,10,20,0.92)",
+          borderRadius: "24px",
+          padding: "16px",
+          display: "flex",
+          gap: "14px",
+          border: "1px solid rgba(160,60,255,0.2)",
+          marginBottom: "100px",
+        }}
+      >
+        <img
+          src="https://files.catbox.moe/7l8m6p.png"
+          style={{
+            width: "120px",
+            height: "120px",
+            borderRadius: "18px",
+            objectFit: "cover",
+          }}
+        />
 
-            <p style={{ color: '#999' }}>
-              Kami terus berkomitmen memberikan layanan digital terbaik untuk pertumbuhan bisnis anda.
-            </p>
+        <div>
+          <div
+            style={{
+              fontWeight: "bold",
+              fontSize: "20px",
+              marginBottom: "8px",
+            }}
+          >
+            Nexora Services Hadir dengan Layanan Terbaik
+          </div>
 
-            <p style={{ color: '#777', fontSize: '13px' }}>
-              2 hari yang lalu
-            </p>
+          <div style={{ opacity: 0.7, lineHeight: "24px" }}>
+            Kami terus berkomitmen memberikan layanan digital terbaik untuk
+            pertumbuhan bisnis anda.
+          </div>
+
+          <div style={{ opacity: 0.5, marginTop: "12px" }}>
+            2 hari yang lalu
           </div>
         </div>
+      </div>
 
-        <div style={bottomNav}>
-          <div style={navItemActive}>🏠<span>Beranda</span></div>
-          <div style={navItem}>📋<span>Pesanan</span></div>
-          <div style={navItem}>❤️<span>Layanan</span></div>
-          <div style={navItem}>🕓<span>Riwayat</span></div>
-          <div style={navItem}>👤<span>Akun</span></div>
-        </div>
+      {/* NAVBAR */}
+      <div
+        style={{
+          position: "fixed",
+          bottom: "0",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "100%",
+          maxWidth: "430px",
+          background: "rgba(5,5,10,0.97)",
+          borderTop: "1px solid rgba(160,60,255,0.2)",
+          display: "flex",
+          justifyContent: "space-around",
+          padding: "14px 0",
+          backdropFilter: "blur(20px)",
+        }}
+      >
+        {[
+          ["🏠", "Beranda"],
+          ["📋", "Pesanan"],
+          ["❤️", "Layanan"],
+          ["🕘", "Riwayat"],
+          ["👤", "Akun"],
+        ].map((item, i) => (
+          <div
+            key={i}
+            style={{
+              textAlign: "center",
+              color: i === 0 ? "#b95fff" : "#ddd",
+            }}
+          >
+            <div style={{ fontSize: "26px" }}>{item[0]}</div>
 
+            <div style={{ marginTop: "6px", fontSize: "14px" }}>
+              {item[1]}
+            </div>
+          </div>
+        ))}
       </div>
     </main>
-  )
-}
-
-const topIcon = {
-  width: '46px',
-  height: '46px',
-  borderRadius: '50%',
-  border: '1px solid #6b21a8',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  background: '#0b0615',
-  boxShadow: '0 0 18px rgba(168,85,247,0.25)'
-}
-
-const welcomeCard = {
-  background: '#0b0615',
-  border: '1px solid #26113b',
-  borderRadius: '24px',
-  padding: '20px',
-  display: 'flex',
-  alignItems: 'center',
-  gap: '16px',
-  boxShadow: '0 0 30px rgba(168,85,247,0.12)'
-}
-
-const sectionTitleWrap = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  marginTop: '26px',
-  marginBottom: '14px'
-}
-
-const sectionTitle = {
-  margin: 0,
-  fontSize: '22px'
-}
-
-const seeAll = {
-  color: '#a855f7'
-}
-
-const bannerCard = {
-  background: 'linear-gradient(180deg,#10051d,#0a0513)',
-  border: '1px solid #341255',
-  borderRadius: '28px',
-  padding: '24px',
-  position: 'relative',
-  overflow: 'hidden',
-  boxShadow: '0 0 40px rgba(168,85,247,0.2)'
-}
-
-const featureCard = {
-  background: 'rgba(15,7,25,0.95)',
-  border: '1px solid #351058',
-  borderRadius: '18px',
-  padding: '14px',
-  textAlign: 'center'
-}
-
-const featureIcon = {
-  fontSize: '28px',
-  marginBottom: '8px'
-}
-
-const dotActive = {
-  width: '22px',
-  height: '8px',
-  borderRadius: '20px',
-  background: '#a855f7'
-}
-
-const dot = {
-  width: '8px',
-  height: '8px',
-  borderRadius: '50%',
-  background: '#444'
-}
-
-const walletCard = {
-  marginTop: '20px',
-  background: '#0b0615',
-  border: '1px solid #26113b',
-  borderRadius: '24px',
-  padding: '20px',
-  display: 'flex',
-  alignItems: 'center',
-  gap: '18px',
-  boxShadow: '0 0 35px rgba(168,85,247,0.14)'
-}
-
-const walletIcon = {
-  width: '78px',
-  height: '78px',
-  borderRadius: '20px',
-  background: 'linear-gradient(180deg,#7c3aed,#9333ea)',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  fontSize: '34px'
-}
-
-const statsCard = {
-  background: '#0b0615',
-  border: '1px solid #26113b',
-  borderRadius: '22px',
-  padding: '18px',
-  display: 'flex',
-  gap: '14px',
-  alignItems: 'center'
-}
-
-const statsIcon = {
-  width: '52px',
-  height: '52px',
-  borderRadius: '16px',
-  background: 'linear-gradient(180deg,#7c3aed,#9333ea)',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  fontSize: '24px'
-}
-
-const statsNumber = {
-  margin: 0,
-  color: '#a855f7'
-}
-
-const statsText = {
-  color: '#999',
-  marginBottom: 0
-}
-
-const newsCard = {
-  background: '#0b0615',
-  border: '1px solid #26113b',
-  borderRadius: '24px',
-  padding: '18px',
-  display: 'flex',
-  gap: '16px',
-  marginBottom: '120px'
-}
-
-const newsImage = {
-  minWidth: '110px',
-  height: '110px',
-  borderRadius: '20px',
-  background: 'linear-gradient(180deg,#7c3aed,#4c1d95)',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  fontSize: '54px',
-  fontWeight: 'bold'
-}
-
-const bottomNav = {
-  position: 'fixed',
-  bottom: '12px',
-  left: '50%',
-  transform: 'translateX(-50%)',
-  width: '92%',
-  maxWidth: '430px',
-  background: '#0a0612',
-  border: '1px solid #26113b',
-  borderRadius: '28px',
-  display: 'flex',
-  justifyContent: 'space-around',
-  padding: '14px 10px',
-  backdropFilter: 'blur(10px)',
-  boxShadow: '0 0 30px rgba(168,85,247,0.18)'
-}
-
-const navItem = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  gap: '6px',
-  color: '#888',
-  fontSize: '13px'
-}
-
-const navItemActive = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  gap: '6px',
-  color: '#a855f7',
-  fontSize: '13px'
-}
+  );
+              }
