@@ -7,7 +7,7 @@ export default function Home() {
       <div className="header">
         <div className="logoWrap">
           <img
-            src="https://i.imgur.com/6IUbEMM.png"
+            src="https://files.catbox.moe/6m0n8x.png"
             className="logo"
           />
 
@@ -41,7 +41,7 @@ export default function Home() {
 
       <div className="promoCard">
         <img
-          src="https://i.imgur.com/T7sQqQp.jpeg"
+          src="https://files.catbox.moe/8w7h2g.jpg"
           className="banner"
         />
 
@@ -91,7 +91,7 @@ export default function Home() {
 
       <div className="newsCard">
         <img
-          src="https://i.imgur.com/6IUbEMM.png"
+          src="https://files.catbox.moe/8w7h2g.jpg"
           className="newsImage"
         />
 
