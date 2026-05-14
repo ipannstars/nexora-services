@@ -422,4 +422,4 @@ const navItemActive = {
   gap: '6px',
   color: '#a855f7',
   fontSize: '13px'
-            }
+}
